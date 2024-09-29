@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliens Legends</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Aliens Legends </div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#products">product</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="MainBox">
+        <section id="products">
+            <div class="product" id="product1">
+                <img src="product1.jpg" alt="product1">
+                <h2>product1</h2>
+                <p>Sale：$1000</p>
+                <button onclick="addToCart('product1')">addToCart</button>
+            </div>
+            <div class="product" id="product1">
+                <img src="product2.jpg" alt="product2">
+                <h2>product2</h2>
+                <p>Sale：¥1050</p>
+                <button onclick="addToCart('product1')">addToCart</button>
+            </div>
+            <div class="product" id="product1">
+                <img src="product3.jpg" alt="product3">
+                <h2>product3</h2>
+                <p>Sale：¥1000</p>
+                <button onclick="addToCart('product1')">addToCart</button>
+            </div>
+            <div class="product" id="product1">
+                <img src="product1.jpg" alt="产品1">
+                <h2>product4</h2>
+                <p>Sale：$1000</p>
+                <button onclick="addToCart('product1')">addToCart</button>
+            </div>
+        </section>
+
+        </div>
+        
+    </main>
+    <footer>
+        <p>Belongs to &copy; 2024 Arthur Xu Xiyan</p>
+    </footer>
+    <div id="cart" style="display:none;">
+        <h3>购物车</h3>
+        <ul id="cartItems"></ul>
+        <button onclick="checkout()">结账</button>
+    </div>
+</body>
+</html>
